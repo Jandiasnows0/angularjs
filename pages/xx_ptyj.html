@@ -1,0 +1,136 @@
+<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<div class="xx_ptyj">
+	<div class="btn">
+		<input type="button" value="发送">
+		<input type="button" value="定时发送">
+		<input type="button" value="存草稿">
+		<input type="button" value="关闭">
+		<a href="">新窗口写信</a>
+		<a href="">预览</a>
+	</div>
+	<div class="xx_nr">
+		<div class="xx_left">
+			<form>
+				<p class="i sjr">
+					<label><a href="">收件人</a></label>
+					<input type="text" class="input_t">
+				</p>
+				<p class="w p1">
+					<a href="">添加抄送</a><span class="gray5">-</span>
+					<a href="">添加密送</a><span class="gray5">|</span>
+					<a href="">分别发送</a>
+				</p>
+				<p class="i zt">
+					<label class="black">主题</label>
+					<input type="text" class="input_t">
+					<span class="zt_bj zt_bj1"></span>
+				</p>
+				<p class="w ">
+				    <ul class="clear">
+				        <li>
+							<span class="zt_bj zt_bj2"></span><a href="">添加附件</a><span class="gray5"></span><span class="zt_bj zt_bj3"></span>     	
+				        </li>
+				        <li>
+					        <span class="zt_bj zt_bj4"></span><a href="">超大附件</a> 	
+				        </li>
+				        <li>
+				        	<span class="zt_bj zt_bj5"></span>
+				        	<a href="">照片</a>
+				        	<span class="zt_bj zt_bj6"></span>
+				        </li>
+				    	<li><span class="zt_bj zt_bj7"></span><a href="">文档</a></li>
+				    	<li><span class="zt_bj zt_bj8"></span><a href="">截屏</a></li>
+				    	<li><span class="zt_bj zt_bj9"></span><a href="">表情</a></li>
+				    	<li><span class="zt_bj zt_bj10"></span><a href="">更多</a></li>
+				    	<li><span class="zt_bj zt_bj11"></span><a href="">格式</a></li>
+
+				    </ul>
+				</p>
+				<p class="i zwp" >
+					<label class="black zw">正文</label>
+					<textarea cols="100" rows="10"></textarea>
+					
+				</p>
+				
+			</form>
+			<div class="xx_manager">
+				<span class="black">
+					发件人：
+				</span>
+				<a href="" class="black" ng-controller='managerctr'>
+					"<span class="name">{{manager.name}}</span>"
+					<span>{{manager.email}}</span>
+					<span class="xl">▼</span>
+				</a>
+				<span class="sx gray5">|</span>
+				<a href="" class="black">其他选项</a>
+				<span class="qt"></span>
+			</div>
+			<div class="btn">
+					<input type="button" value="发送">
+					<input type="button" value="定时发送">
+					<input type="button" value="存草稿">
+					<input type="button" value="关闭">
+			</div>
+		</div>
+		<div class="xx_right">
+		    <div class="zuo"></div>
+			<div class="right_cont">
+				<ul class="right_tab">
+					<li id="txl">
+						通讯录
+					</li>
+                          		
+					<li class="xz" >
+						信纸
+					</li>
+				</ul>
+				<ul class="right_nr">
+					<li>
+						<div class="search">
+							<input type="text" placeholder="查找联系人...">
+							<span></span>
+						</div>
+						<div class="lxr">
+							<div class="now">
+								<div class="title">
+									<span class="black">最近联系人</span>
+									<a href="">清空</a>
+								</div>
+								<ul ng-controller='managerctr'>
+                                        
+									<li class="gray5" ng-repeat="a in zjlxr">{{a.name}}</li>
+								</ul>
+								<div class="more gray5">显示更多>></div>
+						    </div>
+						    <div class="qqhy black">
+
+						        <div class="title">
+						        	QQ好友
+						        </div>
+						    	<ul ng-controller='managerctr'>
+						    		<li class="black" ng-repeat='a in qqlxr'>
+						    		<span></span>
+						    		{{a.group}}
+						    			<ul>
+						    				<li ng-repeat='b in a.number'>{{b.name}}</li>
+						    			</ul>
+						    		</li>
+						    	</ul>
+						    </div>
+						    <div class="yxzs black">
+						    	邮箱助手
+						    </div>
+						    <div class="wy gray5"><span></span>网页生成助手</div>
+						</div>
+						
+					</li>
+					<li>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

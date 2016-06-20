@@ -1,0 +1,66 @@
+<div class="nr_sx">
+    <div class="sx_top">
+    	<button class="more">+</button>
+    	<button class="sj"><span class="bj"></span></button>
+    	<button class="gj">工具<span class="bj"></span></button>
+    	<div class="top_r">
+    		<input placeholder="搜索全部联系人">
+    		<button><span class="bj"></span></button>
+    	</div>
+    </div>
+    <div class="sx_main">
+    	<div class="black qb">全部</div>
+    	<div class="title gray5">
+    		<span class="box"><input type="checkbox"></span>
+    		<span class="xm">姓名</span>
+    		<span class="yx">邮箱</span>
+    		<span class="dh">电话</span>
+    		<span class="fz">分组</span>
+    	</div>
+    	<div class="lxr black" >
+    		<ul class="box">
+    			<li ng-repeat='a in txl'><input type="checkbox"></li>
+    		</ul>
+    		<ul class="xm">
+    		      <li ng-repeat='a in txl'>{{a.name}}</li>	
+    		</ul>
+            <ul class="yx">
+    		<li ng-repeat='a in txl'>{{a.yx}}</li>	
+    		</ul>
+    		<ul class="dh">
+    		<li ng-repeat='a in txl'>{{a.dh}}</li>	
+    		</ul>
+    		<ul class="fz">
+    		<li ng-repeat='a in txl'>{{a.fz}}</li>	
+    		</ul>
+    	</div>
+    </div>
+    <div class="sx_right">
+    	<div class="title">
+    		<span class="black">
+    			通讯录
+    		</span>
+    		<span class="r">
+                新建组
+    		 </span>
+    	</div>
+    	<div class="qb">
+    		全部(12)
+    	</div>
+    	<div class="qt black">
+    		其他联系人
+    	</div>
+    	<div class="ls">
+    		历史联系人(11)
+    	</div>
+    	<div class="qq black">
+    		QQ好友
+    	</div>
+    	<div class="fz">
+    		<ul>
+    			<li ng-repeat='a in qqlxr'>{{a.group}}</li>
+    		</ul>
+    	</div>
+
+    </div>
+</div>

@@ -1,0 +1,223 @@
+
+var app = angular.module('myApp',['ui.router']);
+
+
+
+app.config(function($stateProvider,$urlRouterProvider){
+	$stateProvider.state('home',{
+		url:'/home',
+		templateUrl:'pages/home.html'
+	}).state('xx',{
+        url:'/xx',
+        templateUrl:'pages/xx.html'
+	}).state('xx.ptyj',{
+		url:'/ptyj',
+		templateUrl:'pages/xx_ptyj.html'
+	}).state('xx.qyj',{
+		url:'/qyj',
+		templateUrl:'pages/xx_qyj.html'
+	}).state('xx.hk',{
+		url:'/hk',
+		templateUrl:'pages/xx_hk.html'
+	}).state('xx.mxp',{
+		url:'/mxp',
+		templateUrl:'pages/xx_mxp.html'
+	}).state('xx.yspyj',{
+		url:'/yspyj',
+		templateUrl:'pages/xx_yspyj.html'
+	}).state('sx',{
+        url:'/sx',
+        templateUrl:'pages/sx.html'
+	}).state('txl',{
+        url:'/txl',
+        templateUrl:'pages/txl.html'
+	})
+	$urlRouterProvider.otherwise('/home')
+})
+
+app.controller('managerctr',function($scope,$http){
+ 	$scope.manager={
+ 		name:'Jandia_snow',
+ 		email:'88074479@qq.com'
+ 	}
+//sjx
+    $scope.sjx=[{
+       day:'今天',num:'1',
+       nr:[{nom:'weidu',fjr:'知乎每日精选',
+       zt1:'心理学',zt2:'—这是一封',time:'今天09：04',tr:'last'}]
+    },{
+    	day:'星期三',num:'1',
+        nr:[{tr:'last',nom:'yidu',fjr:'聚合数据',zt1:'五年周庆',zt2:'-限时抢购',time:"6月15日"}]
+    },{
+    	day:'上周',num:'2',
+        nr:[{nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"},{
+        	nom:'weidu',fjr:'github',zt1:"discover interestiong project",
+        	zt2:'-there is a hole world od code waiting for you',time:'6月10日',
+            tr:'last'
+        }]
+
+    },{
+    	day:'更早',num:"71",
+    	nr:[{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月2日"},
+
+    		{nom:'yidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+               nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+         nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+           nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+               nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+         nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+           nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+               nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+         nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+           nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+    		nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+               nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+         nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+           nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	},{
+           nom:'weidu',fjr:'baidu',zt1:'百度账号-身份验证',zt2:'-亲爱的用户：您好！感谢..',time:"6月12日"
+    	}]
+
+    }]
+
+//nosee
+    $scope.nosee={
+    	sjx:'4',
+    	ydkj:'94',
+    	ljx:'3'
+    }
+//mymasage
+    $scope.mymasage={
+    	jfdj:'8级',
+    	yxrl:'2G',
+    	login:'1分钟前',
+    	ljjb:'0次'
+    }
+// birthday
+    $scope.birthday=[{name:'张三',time:'将在两天后(农历五月十五)过生日',img:'images/getqqicon.jpg'
+                   },{name:'李四',time:'将在四天后(农历五月十五)过生日',img:'images/getqqicon1.jpg'}]
+//weather
+    $scope.weather={
+    	city:'烟台',
+    	today:'18℃～27℃',
+    	tom:'18℃～28℃'
+    }
+//txl
+     $scope.txl=[{dh:'123',fz:'1',name:'zhangsan',yx:'1234567@qq.com'},
+                 {dh:'456',fz:'1',name:"lisi",yx:'23415314@qq.com'}]
+//qqqun
+    $scope.qqqun=[{name:"群1"},
+                   {name:"群2"},
+                   {name:"群3"},
+                   {name:"群4"},
+                   {name:"群5"},
+                   {name:"群6"},
+                   {name:"群7"},
+                   {name:"群8"},
+                   {name:"群9"},
+                   {name:"群10"},
+                   {name:"群11"},
+                   {name:"群12"},
+                   {name:"群13"},
+                   {name:"群14"},
+                   {name:"群15"},
+                   {name:"群16"},
+                   {name:"群17"},
+                   {name:"群18"}]
+//zjlxr  
+    $scope.zjlxr=[{
+	    	name:'chenge',
+	    	email:'3490104390@qq.com'
+	    },{
+	        name:'guaika',
+	        email:'392095898@qq.com'
+	    },{
+	        name:'yanyiyt@qq.com',
+	        email:'yanyiyt@qq.com'
+
+	    },{
+	    	name:'miaoqx',
+	    	email:'miaoqx@jre.cn'
+	    },{
+	    	name:'gaojl',
+	    	email:'gaojl@gre.cn'
+	    },{
+	    	name:"990950874",
+	    	email:"990950874@qq.com"
+	    },{
+	    	name:'954340293@qq.com',
+	    	email:'954340293@qq.com'
+	    },{
+	    	name:'wozuida',
+	    	email:'420654534@qq.com'
+	    },{
+	    	name:'lyy',
+	    	email:'98457821@qq.com'
+    }]
+//qqlxr
+     $scope.qqlxr=[{
+	     	group:'no',
+	     	number:[{name:"1"},{name:'3'}]
+	     },{
+	        group:'16',
+	        number:[{name:'2'},{name:'4'}]
+	    },{
+	    	group:'home',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'teacher',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'O_o',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'B006',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'123',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'621',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'yhh',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'ngxt',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'ccnn',
+	    	number:[{name:'5'},{name:'6'}]
+	    },{
+	    	group:'llm',
+	    	number:[{name:'5'},{name:'6'}]
+	    }] 
+})

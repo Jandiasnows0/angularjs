@@ -1,0 +1,87 @@
+<div class="nr_sx">
+    <div class="title">
+    	<span class="sj">收件箱</span>
+
+    	<span class="black">(共
+    	<span class="feng">75</span>
+    	封，其中</span>
+    	<a href="">未读邮件</a>
+    	<span class="black">
+    	<span class="feng">5</span>封)</span>
+    </div>
+    <form>
+    	<div class="btn">
+			<input type="button" value="删除">
+			<input type="button" value="彻底删除">
+			<input type="button" value="转发">
+			<input type="button" value="举报">
+			<input type="button" value="全部标为已读">
+			<input type="button" value="标记为..."><span></span>
+	        <input type="button" value="移动到..."><span></span> 
+
+	        <a href="" class="r">跳转</a>
+	        <a href="" class="r">下一页</a>
+
+	        <span class="r black">页</span>
+	        <span class="r black">3</span>
+	        <span class="r black">/</span>
+	        <span class="r black">1</span>
+	    </div>
+	<div class="tou">
+		<table class="table_tou" cellpadding="0" cellspacing="0">
+			<tr class="black table_title">
+				<td class="td1"><input type="checkbox"></td>
+				<td class="td2"><span class="em"></span></td>   
+				<td class="td3">发件人</td>
+				<td class="td4">主题</td>
+				<td class="td5">时间</td>		
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="table_xin" ng-controller='managerctr'  ng-repeat='n in sjx'>
+
+		    <tr class="xin_title">
+		    	<td colspan="5">
+		    	  <a href="">
+		          <span class="bold">{{n.day}}</span>
+		    	  <span class="xhx">({{n.num}} 封)</span>
+		    	  </a>
+		    	</td>
+		    	
+		    </tr>
+			<tr ng-repeat="c in n.nr" class="xin_nr">
+                <td class="td1 {{c.nom}} {{c.tr}}"><input type="checkbox"></td>
+				<td class="td2 {{c.nom}} {{c.tr}}"><span class="ywd"></span></td>   
+				<td class="td3 {{c.nom}} {{c.tr}}">{{c.fjr}}</td>
+				<td class="td4 {{c.nom}} {{c.tr}}"><span>{{c.zt1}}</span><span class="gray5">{{c.zt2}}</span></td>
+				<td class="td5 {{c.nom}} {{c.tr}}">{{c.time}}
+				<span class="xx"></span>
+				</td>	
+     		</tr>
+		</table>
+	</div>
+    <div class="wei">
+    	<span class="gray5">选择：</span>
+    	<a href="">全部</a><span class="black l">-</span>
+    	<a href="">无</a><span class="black l">-</span>
+    	<a href="">已读</a><span class="black l">-</span>
+    	<a href="">未读</a>
+    </div>
+	<div class="btn">
+			<input type="button" value="删除">
+			<input type="button" value="彻底删除">
+			<input type="button" value="转发">
+			<input type="button" value="举报">
+			<input type="button" value="全部标为已读">
+			<input type="button" value="标记为..."><span></span>
+	        <input type="button" value="移动到..."><span></span> 
+
+	        <a href="" class="r">跳转</a>
+	        <a href="" class="r">下一页</a>
+
+	        <span class="r black">页</span>
+	        <span class="r black">3</span>
+	        <span class="r black">/</span>
+	        <span class="r black">1</span>
+	</div>
+    </form>
+</div>

@@ -1,0 +1,151 @@
+<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script><div class="nr">
+				<div class="zuo">
+				    	<div class="xinxi">
+							<div class="title">
+								<span class="gd">上午好</span>
+								<a href="">{{manager.name}}</a>
+								<span>。</span>
+							</div>
+							<div class="eg">
+								<a href="">注册英文邮箱账号</a>
+								<span>(如：chen@foxmail.com)</span>
+							</div>
+							<div class="email">
+								<span class="tb"></span>
+								<span class="yj">邮件:<span class="number">4</span>封</span>
+								<a href="">未读邮件</a>
+							</div>
+							<div class="sj">
+								<a href="">收件箱(<span class="number" ng-bind="nosee.sjx"></span>)</a>
+
+								<a href="">阅读空间(<span class="number" ng-bind="nosee.ydkj"></span>)</a>
+							</div>
+					    </div>	
+					    <div class="tj">
+					    	<div class="main">邮箱推荐</div>
+					    	<div class="img"><div class="imgs"></div></div>
+					    	<div class="list" class="clear">
+					    		<ul>
+					    			<li>
+					    				<span class="xt xt1"></span>
+					    				<a href="">iPhone版</a>
+					    			</li>
+					    			<li>
+					    				<span class="xt xt2"></span>
+					    				<a href="">iPad版</a>
+					    			</li>
+					    			<li>
+					    				<span class="xt xt3"></span>
+					    				<a href="">Android版</a>
+					    			</li>
+					    		</ul>
+					    		<ul>
+					    		    <li>
+					    		    	<span class="xt xt4"></span>
+					    		    	<a href="">明信片</a>-<a href="">贺卡</a>
+					    		    </li>
+					    		    <li>
+					    		    	<span class="xt xt5"></span>
+					    		    	<a href="">记事本</a>-<a href="">日历</a>
+					    		    </li>
+					    			<li>
+					    				<span class="xt xt6"></span>
+					    				<a href="">文件中转站</a>
+					    			</li>
+					    		</ul>
+					    	</div>
+					    </div>	
+					    <div class="wei">
+					    	<p class="p1">
+								<a href="">2015年8月7日更新</a><span>|</span>
+								<a href="">暖灯行动</a><span>|</span>
+								<a href="">企业邮箱</a><span>|</span>
+								<a href="">开放平台</a><span>|</span>
+								<a href="">体验室</a><span>|</span>
+								<a href="">邮箱助手</a><span>|</span>
+								<a href="">自助查询</a><span>|</span>
+								<a href="">团队博客</a><span>|</span>
+								<a href="">加入我们</a>
+							</p>
+							<p class="p2">
+								标准版 - <a href="">基本版</a> | © 1998 - 2016 Tencent Inc. All Rights Reserved
+							</p>
+					    </div>			
+				</div>
+				<div class="you">
+					<div class="top">
+						<div class="city black">
+							{{weather.city}}
+						</div>
+						<div class="tq black">
+							今：<a href=""></a><span class="today">{{weather.today}}</span>
+							明：<a href=""></a><span class="tomo">{{weather.tom}}</span>
+						</div>
+						<div class="jl">
+							<div class="title black">简历中心</div>
+							<div>
+								<div class="gray5">
+								    智能导入简历，提供个性化模板，为你的求职保驾护航。<a href="">立即体验</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="tabs clear black">
+							<ul>
+								<li class="s">
+									生日提醒
+								</li>
+								<li>
+									我的信息
+								</li>
+							</ul>
+						</div>
+                        <div class="ders black">
+                        	<ul>
+                        		<li class="sr">
+                        			<ul>
+                        				<li ng-repeat="a in birthday">
+                        					<img src="{{a.img}}">
+                        					<div class="name">{{a.name}}</div>
+                        					<div class="time">
+                        					{{a.time}}
+                        					</div>
+                        					<div class="zf">
+                        						<a href="">发贺卡</a>
+                        						<a href="">发明信片</a>
+                        					</div>
+                        				</li>
+                        				
+                        			</ul>
+                        			<div class="more">
+                        				<a href="">查看所有好友生日>></a>
+                        			</div>
+                        		</li>
+                        		<li class="gr">
+                        			<div class="jf">
+                        				<span class="n">积分等级：</span>
+                        				<span class="img"></span>
+                                        <span>(</span><a href="">{{mymasage.jfdj}}</a><span>)</span>
+                                        <a href="">自助查询</a>
+                        			</div>
+                        			<div class="rl">
+                        			    <span class="n">邮箱容量：</span>
+                        			    <a href="">{{mymasage.yxrl}}</a>
+                        			    <span>(已使用67M，3%)</span>
+                        			</div>
+                        			<div class="dl">
+                        			    <span class="n">上次登录：</span>
+                        				<a href="">{{mymasage.login}}</a>
+                        			</div>
+                        			<div class="lj">
+                        			    <span class="n">垃圾举报：</span>
+                        			    <a href="">{{mymasage.ljjb}}</a>
+                        			</div>
+                        		</li>
+                        	</ul>
+                        </div>
+					</div>			
+				</div>
+			</div>

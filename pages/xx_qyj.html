@@ -1,0 +1,79 @@
+<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<div class="xx_qyj">
+	<div class="btn">
+		<input type="button" value="发送">
+		<input type="button" value="存草稿">
+		<input type="button" value="关闭">
+		<a href="">新窗口写信</a>
+		<a href="">预览</a>
+	</div>
+	<div class="xx_nr">
+		<div class="xx_left">
+			<form>
+				<p class="i sjr">
+					<label><a href="">QQ群</a></label>
+					<input type="text" placeholder="选择QQ群" class="input_t">
+				</p>
+				<p class="w p1">
+					<a href="">添加抄送</a><span class="gray5">-</span>
+					<a href="">添加密送</a><span class="gray5">|</span>
+					<a href="">分别发送</a>
+				</p>
+				<p class="i zt">
+					<label class="black">主题</label>
+					<input type="text" class="input_t">
+					<span class="zt_bj zt_bj1"></span>
+				</p>
+				<p class="w ">
+				    <ul class="clear">
+				        <li>
+							<span class="zt_bj zt_bj2"></span><a href="">添加附件</a><span class="gray5"></span><span class="zt_bj zt_bj3"></span>     	
+				        </li>
+				        <li>
+					        <span class="zt_bj zt_bj4"></span><a href="">超大附件</a> 	
+				        </li>
+				        <li>
+				        	<span class="zt_bj zt_bj5"></span>
+				        	<a href="">照片</a>
+				        	<span class="zt_bj zt_bj6"></span>
+				        </li>
+				    	<li><span class="zt_bj zt_bj7"></span><a href="">文档</a></li>
+				    	<li><span class="zt_bj zt_bj8"></span><a href="">截屏</a></li>
+				    	<li><span class="zt_bj zt_bj9"></span><a href="">表情</a></li>
+				    	<li><span class="zt_bj zt_bj10"></span><a href="">更多</a></li>
+				    	<li><span class="zt_bj zt_bj11"></span><a href="">格式</a></li>
+
+				    </ul>
+				</p>
+				<p class="i zwp" >
+					<label class="black zw">正文</label>
+					<textarea cols="100" rows="10"></textarea>
+					
+				</p>
+				
+			</form>
+			
+			<div class="btn" style="margin-top: 10px">
+					<input type="button" value="发送">
+					
+					<input type="button" value="存草稿">
+					<input type="button" value="关闭">
+			</div>
+		</div>
+		<div class="xx_right">
+		    <!-- <div class="zuo"></div> -->
+			<div class="right_cont">
+			    <div class="qqq black">QQ群</div>
+			    <div>
+			    	<ul>
+			    		<li ng-repeat='a in qqqun'>
+			    			{{a.name}}
+			    		</li>
+			    	</ul>
+			    </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
